@@ -52,6 +52,10 @@
   .heroSubtitle {
     font-size: 18px;
   }
+  .heroAvatar {
+  width: 320px;
+  height: 320px;
+}
 }
 
 /* ===== About Band + Skills Card ===== */
@@ -173,6 +177,10 @@
     border-top: 1px solid rgba(28, 7, 112, 0.08);
     border-bottom: 1px solid rgba(28, 7, 112, 0.08);
   }
+  .heroAvatar {
+  width: 320px;
+  height: 320px;
+}
 }
 
 .skillCol {

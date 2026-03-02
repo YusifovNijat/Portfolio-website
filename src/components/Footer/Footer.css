@@ -1,0 +1,71 @@
+.footer {
+  padding: 90px 20px 40px;
+  background: linear-gradient(180deg, #261cc1 0%, #1c0770 100%);
+  color: white;
+}
+
+.footerInner {
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footerLogo {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 18px;
+  border-radius: 18px;
+  border: 3px solid rgba(255, 255, 255, 0.85);
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 22px;
+}
+
+.footerText {
+  margin: 0 auto 26px;
+  max-width: 620px;
+  font-size: 20px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.footerSocials {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 34px;
+}
+
+.socialBtn {
+  width: 54px;
+  height: 54px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  display: grid;
+  place-items: center;
+  transition: transform 0.15s ease, border-color 0.15s ease,
+    background 0.15s ease;
+  text-decoration: none;
+}
+
+.socialBtn:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.socialIcon svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+  color: white;
+}
+
+.footerBottom {
+  font-size: 14px;
+  opacity: 0.75;
+  padding-top: 10px;
+}

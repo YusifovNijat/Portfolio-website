@@ -1,0 +1,278 @@
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 28px;
+}
+
+
+.logo {
+  width: 56px;
+  height: 56px;
+  border: 3px solid var(--primary);
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  color: var(--primary);
+  font-weight: 900;
+  font-size: 22px;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-size: 14px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: rgba(28, 7, 112, 0.75);
+}
+
+.navLinks a:hover {
+  color: var(--primary);
+}
+
+.btnOutline {
+  border: 3px solid var(--primary);
+  color: var(--primary);
+  background: transparent;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 150ms;
+}
+
+.btnOutline:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.hero {
+  min-height: 100vh;
+  background: white;
+}
+
+.heroAvatar {
+  width: 320px;
+  height: 320px;
+  margin: 40px auto;
+}
+
+.heroAvatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.aboutSection {
+  position: relative;
+  z-index: 1;
+  padding-top: 120px; /* to create space because laptop overlaps */
+}
+.heroMain {
+  text-align: center;
+  padding-top: 110px;
+}
+
+.heroTitle {
+  font-size: 56px;
+  line-height: 1.05;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.heroSubtitle {
+  margin: 18px auto 0;
+  max-width: 780px;
+  font-size: 20px;
+  color: rgba(28, 7, 112, 0.65);
+}
+
+.avatarWrap {
+  margin-top: 64px;
+  display: grid;
+  place-items: center;
+}
+
+.avatarOuter {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  background: rgba(38, 28, 193, 0.1);
+  display: grid;
+  place-items: center;
+}
+
+.avatarInner {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: var(--primary);
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 56px;
+  font-weight: 900;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 40px;
+  }
+  .heroSubtitle {
+    font-size: 18px;
+  }
+}
+
+/* ===== About Band + Skills Card ===== */
+
+.aboutBand {
+  margin-top: 90px;
+  background: var(--primary);
+  padding: 90px 0 140px;
+  position: relative;
+}
+
+.aboutInner {
+  text-align: center;
+  color: white;
+}
+
+.aboutTitle {
+  margin: 0;
+  font-size: 44px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.aboutText {
+  margin: 18px auto 0;
+  max-width: 820px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* the big white card that overlaps the purple band */
+.skillCard {
+  background: white;
+  border-radius: 18px;
+  margin-top: 46px;
+  transform: translateY(70px); /* clean overlap like MattFarley */
+  box-shadow: 0 18px 60px rgba(28, 7, 112, 0.14);
+  border: 1px solid rgba(28, 7, 112, 0.08);
+  overflow: hidden;
+}
+
+.skillGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.skillCol {
+  padding: 46px 44px 52px;
+  text-align: center;
+}
+
+.skillColMiddle {
+  border-left: 1px solid rgba(28, 7, 112, 0.08);
+  border-right: 1px solid rgba(28, 7, 112, 0.08);
+}
+
+.skillIcon {
+  width: 58px;
+  height: 58px;
+  border-radius: 999px;
+  background: rgba(58, 154, 255, 0.18);
+  display: grid;
+  place-items: center;
+  margin: 0 auto 18px;
+  font-size: 26px;
+}
+
+.skillIcon {
+  width: 64px;
+  height: 64px;
+  border-radius: 999px;
+  margin: 0 auto 18px;
+  background: rgba(58, 154, 255, 0.18);
+  border: 2px solid rgba(58, 154, 255, 0.35);
+  display: grid;
+  place-items: center;
+  color: var(--ink);
+}
+
+.skillHeading {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.skillDesc {
+  margin: 14px auto 0;
+  max-width: 320px;
+  color: rgba(28, 7, 112, 0.7);
+  line-height: 1.7;
+}
+
+.skillLabel {
+  margin-top: 24px;
+  font-weight: 800;
+  color: var(--primary);
+  font-size: 14px;
+}
+
+.skillValue {
+  margin-top: 10px;
+  color: rgba(28, 7, 112, 0.78);
+  line-height: 1.6;
+}
+
+.aboutBand + * {
+  margin-top: 70px;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .skillGrid {
+    grid-template-columns: 1fr;
+  }
+  .skillColMiddle {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid rgba(28, 7, 112, 0.08);
+    border-bottom: 1px solid rgba(28, 7, 112, 0.08);
+  }
+}
+
+.skillCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fixedDesc {
+  min-height: 72px; /* adjust if needed */
+  display: flex;
+  align-items: center;
+}
+
+.toolBlock {
+  margin-top: 26px;
+}
+
+html {
+  scroll-behavior: smooth;
+}

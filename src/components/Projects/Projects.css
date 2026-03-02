@@ -1,0 +1,126 @@
+.projectsSection {
+  padding: 110px 0;
+  background: #ffffff;
+}
+
+.sectionTitle {
+  margin: 0;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 900;
+  color: var(--ink);
+}
+
+.sectionSubtitle {
+  margin: 14px auto 0;
+  text-align: center;
+  max-width: 760px;
+  color: rgba(28, 7, 112, 0.7);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.projectsGrid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.projectCard {
+  border-radius: 18px;
+  border: 1px solid rgba(28, 7, 112, 0.08);
+  overflow: hidden;
+  box-shadow: 0 18px 60px rgba(28, 7, 112, 0.08);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectImageWrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: rgba(38, 28, 193, 0.06);
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.projectBody {
+  padding: 20px 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.projectTitle {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--ink);
+}
+
+.projectDesc {
+  margin: 0;
+  color: rgba(28, 7, 112, 0.75);
+  line-height: 1.6;
+}
+
+.toolChips {
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.toolChip {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(38, 28, 193, 0.06);
+  border: 1px solid rgba(38, 28, 193, 0.14);
+  color: rgba(28, 7, 112, 0.85);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.projectLinks {
+  margin-top: 8px;
+  display: flex;
+  gap: 12px;
+}
+
+/* Buttons (reusable) */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  padding: 0 16px;
+  border-radius: 999px;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btnPrimary {
+  background: var(--primary);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.0);
+}
+
+.btnGhost {
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid rgba(38, 28, 193, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+}

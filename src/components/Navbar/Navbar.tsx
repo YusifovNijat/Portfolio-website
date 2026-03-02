@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Navbar.css";
+import logo from "./favicon.png"
 
 const links = [
   { label: "Projects", href: "#projects" },
@@ -26,7 +27,7 @@ export default function Navbar() {
       <nav className="nav">
         <a className="brand" href="#top" onClick={handleNavClick}>
 
-          <img src="/favicon.png" alt="Nijat Logo" className="navLogo" />
+          <img src={logo} alt="Nijat Logo" className="navLogo" />
 
         </a>
 
